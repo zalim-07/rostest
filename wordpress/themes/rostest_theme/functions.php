@@ -97,11 +97,55 @@ add_filter('acf/settings/save_json', function () {
     return get_stylesheet_directory() . '/acf-json';
 });
 
-/* Архив докторов - 9 постов на страницу */
-function rostest_doctors_archive_posts_per_page($query)
+/* Архив докторов - фильтрация и сортировка */
+function rostest_doctors_archive_query($query)
 {
     if (!is_admin() && $query->is_main_query() && is_post_type_archive('doctors')) {
         $query->set('posts_per_page', 9);
+
+        $tax_query = array();
+
+        if (!empty($_GET['specialization'])) {
+            $tax_query[] = array(
+                'taxonomy' => 'specialization',
+                'field'    => 'slug',
+                'terms'    => sanitize_text_field($_GET['specialization']),
+            );
+        }
+
+        if (!empty($_GET['city'])) {
+            $tax_query[] = array(
+                'taxonomy' => 'city',
+                'field'    => 'slug',
+                'terms'    => sanitize_text_field($_GET['city']),
+            );
+        }
+
+        if (!empty($tax_query)) {
+            $query->set('tax_query', $tax_query);
+        }
+
+        if (!empty($_GET['sort'])) {
+            $sort = sanitize_text_field($_GET['sort']);
+            
+            switch ($sort) {
+                case 'rating_desc':
+                    $query->set('meta_key', 'doctor_rating');
+                    $query->set('orderby', 'meta_value_num');
+                    $query->set('order', 'DESC');
+                    break;
+                case 'price_asc':
+                    $query->set('meta_key', 'doctor_price_from');
+                    $query->set('orderby', 'meta_value_num');
+                    $query->set('order', 'ASC');
+                    break;
+                case 'experience_desc':
+                    $query->set('meta_key', 'doctor_experience');
+                    $query->set('orderby', 'meta_value_num');
+                    $query->set('order', 'DESC');
+                    break;
+            }
+        }
     }
 }
-add_action('pre_get_posts', 'rostest_doctors_archive_posts_per_page');
+add_action('pre_get_posts', 'rostest_doctors_archive_query');
