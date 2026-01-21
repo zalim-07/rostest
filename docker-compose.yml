@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: rostest_wordpress_db
+    restart: always
+    environment:
+      MYSQL_DATABASE: rostest_wordpress
+      MYSQL_USER: rostest_user
+      MYSQL_PASSWORD: rostest_password
+      MYSQL_ROOT_PASSWORD: rostest_rootpassword
+    volumes:
+      - rostest_db_data:/var/lib/mysql
+    networks:
+      - rostest_network
+
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    container_name: rostest_wordpress_site
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: rostest_user
+      WORDPRESS_DB_PASSWORD: rostest_password
+      WORDPRESS_DB_NAME: rostest_wordpress
+    volumes:
+      - ./wordpress/themes/rostest_theme:/var/www/html/wp-content/themes/rostest_theme
+      - ./wordpress/plugins:/var/www/html/wp-content/plugins
+      
+    networks:
+      - rostest_network
+
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin:latest
+    container_name: rostest_phpmyadmin
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: rostest_rootpassword
+    networks:
+      - rostest_network
+
+volumes:
+  rostest_db_data:
+
+networks:
+  rostest_network:
+    driver: bridge

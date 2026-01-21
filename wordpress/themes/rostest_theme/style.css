@@ -1,0 +1,22 @@
+/*
+Theme Name: Rostest Theme
+Theme URI: https://example.com
+Author: Zalim
+Description: Кастомная тема по тестовому заданию для компании Rostest
+Version: 1.0
+Text Domain: rostest_theme
+*/
+
+/* Базовые стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
