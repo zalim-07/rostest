@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+	<title>Rostest Demo Data</title>
+	<link>http://localhost:8080</link>
+	<description>Демо данные для темы Rostest</description>
+	<language>ru-RU</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>http://localhost:8080</wp:base_site_url>
+	<wp:base_blog_url>http://localhost:8080</wp:base_blog_url>
+
+	<wp:term>
+		<wp:term_id>1</wp:term_id>
+		<wp:term_taxonomy>specialization</wp:term_taxonomy>
+		<wp:term_slug>terapevt</wp:term_slug>
+		<wp:term_name><![CDATA[Терапевт]]></wp:term_name>
+	</wp:term>
+
+	<wp:term>
+		<wp:term_id>2</wp:term_id>
+		<wp:term_taxonomy>specialization</wp:term_taxonomy>
+		<wp:term_slug>kardiolog</wp:term_slug>
+		<wp:term_name><![CDATA[Кардиолог]]></wp:term_name>
+	</wp:term>
+
+	<wp:term>
+		<wp:term_id>3</wp:term_id>
+		<wp:term_taxonomy>specialization</wp:term_taxonomy>
+		<wp:term_slug>hirurg</wp:term_slug>
+		<wp:term_name><![CDATA[Хирург]]></wp:term_name>
+	</wp:term>
+
+	<wp:term>
+		<wp:term_id>4</wp:term_id>
+		<wp:term_taxonomy>city</wp:term_taxonomy>
+		<wp:term_slug>moskva</wp:term_slug>
+		<wp:term_name><![CDATA[Москва]]></wp:term_name>
+	</wp:term>
+
+	<wp:term>
+		<wp:term_id>5</wp:term_id>
+		<wp:term_taxonomy>city</wp:term_taxonomy>
+		<wp:term_slug>spb</wp:term_slug>
+		<wp:term_name><![CDATA[Санкт-Петербург]]></wp:term_name>
+	</wp:term>
+
+	<item>
+		<title>Иванов Иван Иванович</title>
+		<wp:post_type><![CDATA[doctors]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<content:encoded><![CDATA[Опытный врач-терапевт с большим стажем работы. Специализируется на диагностике и лечении общих заболеваний.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Опытный врач-терапевт]]></excerpt:encoded>
+		<wp:post_date><![CDATA[2026-01-15 10:00:00]]></wp:post_date>
+		<category domain="specialization" nicename="terapevt"><![CDATA[Терапевт]]></category>
+		<category domain="city" nicename="moskva"><![CDATA[Москва]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[15]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_price_from]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_rating]]></wp:meta_key>
+			<wp:meta_value><![CDATA[4.8]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Петрова Анна Сергеевна</title>
+		<wp:post_type><![CDATA[doctors]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<content:encoded><![CDATA[Врач-кардиолог высшей категории. Занимается диагностикой и лечением сердечно-сосудистых заболеваний.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Кардиолог высшей категории]]></excerpt:encoded>
+		<wp:post_date><![CDATA[2026-01-15 11:00:00]]></wp:post_date>
+		<category domain="specialization" nicename="kardiolog"><![CDATA[Кардиолог]]></category>
+		<category domain="city" nicename="moskva"><![CDATA[Москва]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[20]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_price_from]]></wp:meta_key>
+			<wp:meta_value><![CDATA[3500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_rating]]></wp:meta_key>
+			<wp:meta_value><![CDATA[4.9]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Сидоров Петр Александрович</title>
+		<wp:post_type><![CDATA[doctors]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<content:encoded><![CDATA[Хирург с обширным опытом проведения операций различной сложности.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Опытный хирург]]></excerpt:encoded>
+		<wp:post_date><![CDATA[2026-01-15 12:00:00]]></wp:post_date>
+		<category domain="specialization" nicename="hirurg"><![CDATA[Хирург]]></category>
+		<category domain="city" nicename="spb"><![CDATA[Санкт-Петербург]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[18]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_price_from]]></wp:meta_key>
+			<wp:meta_value><![CDATA[5000]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_rating]]></wp:meta_key>
+			<wp:meta_value><![CDATA[4.7]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Кузнецова Мария Дмитриевна</title>
+		<wp:post_type><![CDATA[doctors]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<content:encoded><![CDATA[Врач-терапевт. Специализируется на профилактике и лечении простудных заболеваний.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Терапевт-профилактолог]]></excerpt:encoded>
+		<wp:post_date><![CDATA[2026-01-15 13:00:00]]></wp:post_date>
+		<category domain="specialization" nicename="terapevt"><![CDATA[Терапевт]]></category>
+		<category domain="city" nicename="spb"><![CDATA[Санкт-Петербург]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[10]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_price_from]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2000]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_rating]]></wp:meta_key>
+			<wp:meta_value><![CDATA[4.5]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Смирнов Алексей Викторович</title>
+		<wp:post_type><![CDATA[doctors]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<content:encoded><![CDATA[Кардиолог-аритмолог. Занимается лечением нарушений сердечного ритма.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Кардиолог-аритмолог]]></excerpt:encoded>
+		<wp:post_date><![CDATA[2026-01-15 14:00:00]]></wp:post_date>
+		<category domain="specialization" nicename="kardiolog"><![CDATA[Кардиолог]]></category>
+		<category domain="city" nicename="moskva"><![CDATA[Москва]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[12]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_price_from]]></wp:meta_key>
+			<wp:meta_value><![CDATA[3000]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_rating]]></wp:meta_key>
+			<wp:meta_value><![CDATA[4.6]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Волкова Елена Игоревна</title>
+		<wp:post_type><![CDATA[doctors]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<content:encoded><![CDATA[Хирург-травматолог. Специализируется на лечении травм и повреждений опорно-двигательного аппарата.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Хирург-травматолог]]></excerpt:encoded>
+		<wp:post_date><![CDATA[2026-01-15 15:00:00]]></wp:post_date>
+		<category domain="specialization" nicename="hirurg"><![CDATA[Хирург]]></category>
+		<category domain="city" nicename="spb"><![CDATA[Санкт-Петербург]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[16]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_price_from]]></wp:meta_key>
+			<wp:meta_value><![CDATA[4500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_rating]]></wp:meta_key>
+			<wp:meta_value><![CDATA[4.8]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Морозов Дмитрий Олегович</title>
+		<wp:post_type><![CDATA[doctors]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<content:encoded><![CDATA[Врач-терапевт семейной практики. Консультирует пациентов всех возрастов.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Семейный терапевт]]></excerpt:encoded>
+		<wp:post_date><![CDATA[2026-01-15 16:00:00]]></wp:post_date>
+		<category domain="specialization" nicename="terapevt"><![CDATA[Терапевт]]></category>
+		<category domain="city" nicename="moskva"><![CDATA[Москва]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[8]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_price_from]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2200]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_rating]]></wp:meta_key>
+			<wp:meta_value><![CDATA[4.4]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Новикова Ольга Андреевна</title>
+		<wp:post_type><![CDATA[doctors]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<content:encoded><![CDATA[Кардиолог. Специализируется на диагностике ишемической болезни сердца и гипертонии.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Кардиолог]]></excerpt:encoded>
+		<wp:post_date><![CDATA[2026-01-15 17:00:00]]></wp:post_date>
+		<category domain="specialization" nicename="kardiolog"><![CDATA[Кардиолог]]></category>
+		<category domain="city" nicename="spb"><![CDATA[Санкт-Петербург]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[14]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_price_from]]></wp:meta_key>
+			<wp:meta_value><![CDATA[3200]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_rating]]></wp:meta_key>
+			<wp:meta_value><![CDATA[4.7]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Попов Сергей Николаевич</title>
+		<wp:post_type><![CDATA[doctors]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<content:encoded><![CDATA[Хирург общей практики. Проводит операции на органах брюшной полости.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Хирург общей практики]]></excerpt:encoded>
+		<wp:post_date><![CDATA[2026-01-15 18:00:00]]></wp:post_date>
+		<category domain="specialization" nicename="hirurg"><![CDATA[Хирург]]></category>
+		<category domain="city" nicename="moskva"><![CDATA[Москва]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[22]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_price_from]]></wp:meta_key>
+			<wp:meta_value><![CDATA[5500]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_rating]]></wp:meta_key>
+			<wp:meta_value><![CDATA[5.0]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Федорова Наталья Владимировна</title>
+		<wp:post_type><![CDATA[doctors]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<content:encoded><![CDATA[Терапевт. Занимается ведением пациентов с хроническими заболеваниями.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Терапевт-специалист по хроническим заболеваниям]]></excerpt:encoded>
+		<wp:post_date><![CDATA[2026-01-15 19:00:00]]></wp:post_date>
+		<category domain="specialization" nicename="terapevt"><![CDATA[Терапевт]]></category>
+		<category domain="city" nicename="moskva"><![CDATA[Москва]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[11]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_price_from]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2400]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_rating]]></wp:meta_key>
+			<wp:meta_value><![CDATA[4.6]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Егоров Максим Сергеевич</title>
+		<wp:post_type><![CDATA[doctors]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<content:encoded><![CDATA[Кардиолог интервенционный. Проводит малоинвазивные операции на сердце и сосудах.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Интервенционный кардиолог]]></excerpt:encoded>
+		<wp:post_date><![CDATA[2026-01-16 10:00:00]]></wp:post_date>
+		<category domain="specialization" nicename="kardiolog"><![CDATA[Кардиолог]]></category>
+		<category domain="city" nicename="spb"><![CDATA[Санкт-Петербург]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[25]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_price_from]]></wp:meta_key>
+			<wp:meta_value><![CDATA[6000]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_rating]]></wp:meta_key>
+			<wp:meta_value><![CDATA[5.0]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Григорьева Светлана Павловна</title>
+		<wp:post_type><![CDATA[doctors]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<content:encoded><![CDATA[Врач-терапевт, эндокринолог. Специализируется на лечении эндокринных нарушений и диабета.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Терапевт-эндокринолог]]></excerpt:encoded>
+		<wp:post_date><![CDATA[2026-01-16 11:00:00]]></wp:post_date>
+		<category domain="specialization" nicename="terapevt"><![CDATA[Терапевт]]></category>
+		<category domain="city" nicename="spb"><![CDATA[Санкт-Петербург]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[13]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_price_from]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2800]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_rating]]></wp:meta_key>
+			<wp:meta_value><![CDATA[4.9]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Захаров Андрей Викторович</title>
+		<wp:post_type><![CDATA[doctors]]></wp:post_type>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<content:encoded><![CDATA[Пластический хирург. Выполняет реконструктивные и эстетические операции.]]></content:encoded>
+		<excerpt:encoded><![CDATA[Пластический хирург]]></excerpt:encoded>
+		<wp:post_date><![CDATA[2026-01-16 12:00:00]]></wp:post_date>
+		<category domain="specialization" nicename="hirurg"><![CDATA[Хирург]]></category>
+		<category domain="city" nicename="moskva"><![CDATA[Москва]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[19]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_price_from]]></wp:meta_key>
+			<wp:meta_value><![CDATA[7000]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_rating]]></wp:meta_key>
+			<wp:meta_value><![CDATA[4.8]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+</channel>
+</rss>
