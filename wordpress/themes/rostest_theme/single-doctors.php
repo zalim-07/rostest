@@ -37,19 +37,19 @@ get_header(); ?>
 
                     <?php if ($experience) : ?>
                         <div class="doctor-meta-item">
-                            <strong>Стаж врача, лет:</strong> <?php echo esc_html($experience); ?>
+                            Стаж врача, лет: <strong><?php echo esc_html($experience); ?></strong>
                         </div>
                     <?php endif; ?>
 
                     <?php if ($price) : ?>
                         <div class="doctor-meta-item">
-                            <strong>Цена от, Руб:</strong> <?php echo esc_html(number_format($price, 0, '', ' ')); ?>
+                            Цена от, Руб: <strong><?php echo esc_html(number_format($price, 0, '', ' ')); ?></strong>
                         </div>
                     <?php endif; ?>
 
                     <?php if ($rating) : ?>
                         <div class="doctor-meta-item">
-                            <strong>Рейтинг:</strong> <?php echo esc_html($rating); ?>
+                            Рейтинг: <strong><?php echo esc_html($rating); ?></strong>
                         </div>
                     <?php endif; ?>
                 </div>
@@ -59,7 +59,7 @@ get_header(); ?>
                     $specializations = get_the_terms(get_the_ID(), 'specialization');
                     if ($specializations && !is_wp_error($specializations)) : ?>
                         <div class="doctor-specializations">
-                            <strong>Специализация:</strong>
+                            Специализация: <strong><?php echo esc_html($spec->name); ?></strong>
                             <?php 
                             $spec_list = array();
                             foreach ($specializations as $spec) {
@@ -74,7 +74,7 @@ get_header(); ?>
                     $cities = get_the_terms(get_the_ID(), 'city');
                     if ($cities && !is_wp_error($cities)) : ?>
                         <div class="doctor-cities">
-                            <strong>Город:</strong>
+                            Город: <strong><?php echo esc_html($city->name); ?></strong>
                             <?php 
                             $city_list = array();
                             foreach ($cities as $city) {

@@ -20,8 +20,9 @@ get_header(); ?>
                             'hide_empty' => true,
                         ));
                         if ($specializations && !is_wp_error($specializations)) :
+                            $current_spec = isset($_GET['specialization']) ? sanitize_text_field($_GET['specialization']) : '';
                             foreach ($specializations as $spec) :
-                                $selected = (isset($_GET['specialization']) && $_GET['specialization'] == $spec->slug) ? 'selected' : '';
+                                $selected = ($current_spec == $spec->slug) ? 'selected' : '';
                                 ?>
                                 <option value="<?php echo esc_attr($spec->slug); ?>" <?php echo $selected; ?>>
                                     <?php echo esc_html($spec->name); ?>
@@ -42,8 +43,9 @@ get_header(); ?>
                             'hide_empty' => true,
                         ));
                         if ($cities && !is_wp_error($cities)) :
+                            $current_city = isset($_GET['city']) ? sanitize_text_field($_GET['city']) : '';
                             foreach ($cities as $city) :
-                                $selected = (isset($_GET['city']) && $_GET['city'] == $city->slug) ? 'selected' : '';
+                                $selected = ($current_city == $city->slug) ? 'selected' : '';
                                 ?>
                                 <option value="<?php echo esc_attr($city->slug); ?>" <?php echo $selected; ?>>
                                     <?php echo esc_html($city->name); ?>
@@ -57,20 +59,21 @@ get_header(); ?>
                 <div class="filter-item">
                     <label for="sort">Сортировка:</label>
                     <select name="sort" id="sort">
+                        <?php $current_sort = isset($_GET['sort']) ? sanitize_text_field($_GET['sort']) : ''; ?>
                         <option value="">По умолчанию</option>
-                        <option value="rating_desc" <?php selected(isset($_GET['sort']) ? $_GET['sort'] : '', 'rating_desc'); ?>>
+                        <option value="rating_desc" <?php selected($current_sort, 'rating_desc'); ?>>
                             По рейтингу (убывание)
                         </option>
-                        <option value="price_asc" <?php selected(isset($_GET['sort']) ? $_GET['sort'] : '', 'price_asc'); ?>>
+                        <option value="price_asc" <?php selected($current_sort, 'price_asc'); ?>>
                             По цене (возрастание)
                         </option>
-                        <option value="experience_desc" <?php selected(isset($_GET['sort']) ? $_GET['sort'] : '', 'experience_desc'); ?>>
+                        <option value="experience_desc" <?php selected($current_sort, 'experience_desc'); ?>>
                             По стажу (убывание)
                         </option>
                     </select>
                 </div>
 
-                <div class="filter-item">
+                <div class="filter-item filter-actions">
                     <button type="submit" class="filter-submit">Применить</button>
                     <a href="<?php echo esc_url(get_post_type_archive_link('doctors')); ?>" class="filter-reset">Сбросить</a>
                 </div>
