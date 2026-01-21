@@ -1,13 +1,11 @@
 /*
 Theme Name: Rostest Theme
-Theme URI: https://example.com
 Author: Zalim
 Description: Кастомная тема по тестовому заданию для компании Rostest
 Version: 1.0
 Text Domain: rostest_theme
 */
 
-/* Базовые стили */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -19,4 +17,174 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.site-header {
+    background: #667eea;
+    padding: 20px 0;
+}
+
+.site-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .site-header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+.site-title {
+    margin: 0;
+}
+
+.site-title a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-description {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-content {
+    padding: 40px 0;
+}
+
+.site-footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.doctors-filters {
+    background: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.doctors-filters form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.doctors-filters .filter-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+.doctors-filters label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.doctors-filters select {
+    width: 100%;
+    padding: 8px;
+}
+
+.doctors-filters button {
+    background: #0073aa;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.doctors-grid {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .doctors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .doctors-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.doctor-card {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.doctor-card-thumbnail img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.doctor-card-content {
+    padding: 15px;
+}
+
+.doctor-card-title {
+    margin: 0 0 10px 0;
+}
+
+.doctor-card-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.spec-badge {
+    background: #0073aa;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.doctor-card-meta {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagination a,
+.pagination .current {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+    margin: 0 3px;
+}
+
+.pagination .current {
+    background: #0073aa;
+    color: #fff;
 }
