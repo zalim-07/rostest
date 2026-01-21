@@ -1,0 +1,55 @@
+{
+    "key": "group_doctors_info",
+    "title": "Информация о докторе",
+    "fields": [
+        {
+            "key": "field_doctor_experience",
+            "label": "Стаж врача",
+            "name": "doctor_experience",
+            "type": "number",
+            "instructions": "Укажите стаж работы врача в годах",
+            "required": 0,
+            "default_value": 0,
+            "min": 0,
+            "max": 70,
+            "step": 1
+        },
+        {
+            "key": "field_doctor_price_from",
+            "label": "Цена от",
+            "name": "doctor_price_from",
+            "type": "number",
+            "instructions": "Укажите минимальную стоимость приема",
+            "required": 0,
+            "default_value": 0,
+            "min": 0
+        },
+        {
+            "key": "field_doctor_rating",
+            "label": "Рейтинг",
+            "name": "doctor_rating",
+            "type": "number",
+            "instructions": "Укажите рейтинг врача от 0 до 5",
+            "required": 0,
+            "default_value": 0,
+            "min": 0,
+            "max": 5,
+            "step": "1"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "doctors"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": 1
+}
