@@ -96,3 +96,12 @@ add_filter('acf/settings/load_json', function ($paths) {
 add_filter('acf/settings/save_json', function () {
     return get_stylesheet_directory() . '/acf-json';
 });
+
+/* Архив докторов - 9 постов на страницу */
+function rostest_doctors_archive_posts_per_page($query)
+{
+    if (!is_admin() && $query->is_main_query() && is_post_type_archive('doctors')) {
+        $query->set('posts_per_page', 9);
+    }
+}
+add_action('pre_get_posts', 'rostest_doctors_archive_posts_per_page');
